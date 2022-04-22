@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Courage Bets</title>
+		<style>
+			 
+			 body {
+		font-family: "Georgia", serif;
+        background-color: black;
+		color: rgb(255, 255, 255);
+	}
+    h1 {
+	   animation:5s h1 linear infinite;	   
+	   }
+	   @keyframes h1 {
+		0% {
+			   color: yellow
+		   }
+		
+		   50% {
+			   color: black
+		   }
+	   }
+
+   h2 {
+	   animation:5s h2 linear infinite;	   
+	   }
+	   @keyframes h2 {
+		0% {
+			   color: black
+		   }
+		
+		   50% {
+			   color: yellow
+		   }
+	   }
+	   label{
+    display: inline-block;
+
+    clear: left;
+    width: 250px;
+    text-align: left; 
+}
+input {
+  display: inline-block;
+  
+}
+		</style>
+	</head>
+	<body>
+		<h1 align="center">Courage Bets</<h1>
+		<h2 align="center">Sign Up</h2>
+        <img src="bet.jpg" align="right">
+		<h3 align="left">Create an account</h3>
+        
+		<form>
+
+			<label for="username">Username:</label>
+			<input type="text" id="Username" name="Username">
+
+			<br><br>
+			
+			<label for="Email">Email:</label>
+			<input type="text" id="Email" name="Email">
+			
+			<br><br>
+			
+            <label for="Phone Number">Phone Number:</label>
+			<input type="number" id="Phone Number" name="Phone Number">
+
+            <br><br>
+
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password">
+			<input type="checkbox" onclick="one()">Show Password
+
+			<br><br>
+<script>
+
+function one() {
+  var x = document.getElementById("password");
+  if (x.type === "password") {
+    x.type = "text";
+  } else {
+    x.type = "password";
+  }
+}
+</script>
+			
+			<p>By clicking Create account you agree to abide by our Terms of Service and Privacy Policy.</p>
+			
+			<input type="submit" value="Create Account">
+		</form>
+	<h4>Terms and Conditions</h4>
+    <ul>
+        <li>You must be 18 years and above</li>
+    </ul>
+
+	</body>
+</html>
